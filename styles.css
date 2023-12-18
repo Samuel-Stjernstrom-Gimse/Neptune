@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+}
+.main-moon {
+    background-color:black;
+}
+.moons-and-planet {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+}
+.moon {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    border-radius: 200px;
+    background-image: url("https://media.istockphoto.com/id/470801962/photo/close-up-of-the-surface-of-the-moon.webp?b=1&s=170667a&w=0&k=20&c=RrbKoxKO4x3q3mZkrZiba_lgqADScAIVN5ihVeOkZ9U=");
+    border-width: 20px;
+    box-shadow: inset 0 0 20px black;
+}
+
+.moon-text {
+    text-align: center;
+}
+
+#moon-1 {
+    position: absolute;
+    top: 10%;
+    height: 14%;
+    aspect-ratio: 1/1;
+}
+

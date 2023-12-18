@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+}
+.main-moon {
+    background-image: url("images/backround-moon.webp");
+    background-size: cover;
+}
+.moons-and-planet {
+    height: 120vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+.moon {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    border-radius: 200px;
+    background-image:  url("images/moon.png");
+    background-size: cover;
+    position: absolute;
+    transition-duration: 0.2s;
+
+}
+
+.moon:hover {
+    transform: scale(300%);
+    transition-duration: 0.4s ;
+}
+
+.moon-text {
+    text-align: center;
+    padding: 2%;
+}
+
+#moon-1 {
+    position: absolute;
+    top: 10%;
+    height: 12%;
+    aspect-ratio: 1/1;
+}
+
+.planet {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    border-radius: 200px;
+    background-image:  url("images/Neptune_cutout.png");
+    background-size: cover;
+}
+
+.planet:hover {
+    transform: height();
+}
+
+#neptune {
+    position: absolute;
+    top: 40%;
+    height: 20%;
+    aspect-ratio: 1/1;
+}
+
+#moon-2 {
+    top: 20%;
+    right: 30%;
+    height: 14%;
+    aspect-ratio: 1/1;
+}
+
+#moon-3 {
+    top: 40%;
+    right: 20%;
+    height: 12%;
+    aspect-ratio: 1/1;
+}
+
+#moon-4 {
+    top: 56%;
+    right: 26%;
+    height: 7%;
+    aspect-ratio: 1/1;
+}
+
+#moon-5 {
+    top: 78%;
+    right: 40%;
+    height: 12%;
+    aspect-ratio: 1/1;
+}
+
+#moon-6 {
+    top: 85%;
+    right: 50%;
+    height: 4%;
+    aspect-ratio: 1/1;
+}
+
+#moon-7 {
+    top: 80%;
+    right: 70%;
+    height: 12%;
+    aspect-ratio: 1/1;
+}
+
+#moon-8 {
+    top: 50%;
+    right: 66%;
+    height: 12%;
+    aspect-ratio: 1/1;
+}
+
+#moon-9 {
+    top: 40%;
+    right: 80%;
+    height: 9%;
+    aspect-ratio: 1/1;
+}
+
+#moon-10 {
+    top: 25%;
+    right: 66%;
+    height: 12%;
+    aspect-ratio: 1/1;
+}
+
+#moon-11 {
+    top: 75%;
+    right: 60%;
+    height: 8%;
+    aspect-ratio: 1/1;
+}
+
+#moon-12 {
+    top: 9%;
+    right: 60%;
+    height: 10%;
+    aspect-ratio: 1/1;
+}
+
+#moon-13 {
+    top: 80%;
+    right: 26%;
+    height: 3%;
+    aspect-ratio: 1/1;
+}
+
+#moon-14 {
+    top: 45%;
+    right: 60%;
+    height: 5%;
+    aspect-ratio: 1/1;
+}
+
+
+
+
+
