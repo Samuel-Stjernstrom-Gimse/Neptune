@@ -1,0 +1,25 @@
+{
+  "moons": [
+    {
+      "name": "Triton",
+      "meanDistanceFromNeptune": "354,760 km (220,438 miles)",
+      "orbitalPeriodAroundNeptune": "5.87685 Earth days",
+      "meanDiameter": "2,700 km (1,678 miles)",
+      "yearDiscovered": 1846
+    },
+    {
+      "name": "Moon2",
+      "meanDistanceFromNeptune": "...",
+      "orbitalPeriodAroundNeptune": "...",
+      "meanDiameter": "...",
+      "yearDiscovered": 0
+    },
+    {
+      "name": "Moon3",
+      "meanDistanceFromNeptune": "...",
+      "orbitalPeriodAroundNeptune": "...",
+      "meanDiameter": "...",
+      "yearDiscovered": 0
+    }
+  ]
+}

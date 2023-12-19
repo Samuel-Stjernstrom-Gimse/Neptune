@@ -2,7 +2,6 @@
     margin: 0;
 }
 .main-moon {
-    transition-duration: 0.2s;
     background-image: url("images/backround-moon.webp");
     background-size: cover;
 }
@@ -15,25 +14,37 @@
 
 .moon {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
     padding: 10px;
     border-radius: 200px;
-    background-image:  url("images/moon.png");
+    background-image: url("images/moon.png");
     background-size: cover;
     position: absolute;
     transition-duration: 0.2s;
-    height: 10%;
+    height: 8%;
+    aspect-ratio: 1/1;
 
 }
 
 .moon-text {
-    margin-top: 25%;
+    margin-top: 5%;
+    padding: 0;
     display: flex;
     justify-content: center;
     text-align: center;
-    padding: 2%;
-    font-size: 5px;
+    text-justify: auto;
+    font-size: 0.0002em;
+    font-weight: bold;
+    color: white;
+    font-family: "Arial";
+
 }
+
+.moon-text-h1 {
+    color: red;
+}
+
 
 .planet {
     display: flex;
@@ -54,14 +65,22 @@
 #neptune {
     position: absolute;
     top: 40%;
-    height: 20%;
+    height: 35%;
     aspect-ratio: 1/1;
     transition-duration: 0.2s;
 }
 
+#moon-0 {
+    transform: scale(100%);
+    top: 45%;
+    right: 30%;
+    aspect-ratio: 1/1;
+}
+
+
 #moon-1 {
     transform: scale(100%);
-    top: 10%;
+    top: 20%;
     aspect-ratio: 1/1;
 }
 
@@ -88,21 +107,21 @@
 
 #moon-5 {
     transform: scale(130%);
-    top: 78%;
+    top: 75%;
     right: 40%;
     aspect-ratio: 1/1;
 }
 
 #moon-6 {
     transform: scale(50%);
-    top: 85%;
+    top: 70%;
     right: 50%;
     aspect-ratio: 1/1;
 }
 
 #moon-7 {
-    transform: scale(120%);
-    top: 80%;
+    transform: scale(90%);
+    top: 70%;
     right: 70%;
     aspect-ratio: 1/1;
 }
@@ -122,8 +141,8 @@
 }
 
 #moon-10 {
-    transform: scale(120%);
-    top: 25%;
+    transform: scale(70%);
+    top: 28%;
     right: 66%;
     aspect-ratio: 1/1;
 }
@@ -137,24 +156,18 @@
 
 #moon-12 {
     transform: scale(90%);
-    top: 9%;
-    right: 60%;
+    top: 26%;
+    right: 55%;
     aspect-ratio: 1/1;
 }
 
 #moon-13 {
     transform: scale(100%);
-    top: 80%;
+    top: 70%;
     right: 26%;
     aspect-ratio: 1/1;
 }
 
-#moon-14 {
-    transform: scale(100%);
-    top: 45%;
-    right: 60%;
-    aspect-ratio: 1/1;
-}
 
 
 #moon-1:hover,
@@ -170,12 +183,17 @@
 #moon-11:hover,
 #moon-12:hover,
 #moon-13:hover,
-#moon-14:hover {
-    transform: scale(400%);
-    z-index: ;
-
-
+#moon-0:hover {
+    transform: scale(600%);
+    z-index: 1;
+    aspect-ratio: 1/1;
+    box-shadow: 0 0 30px white;
+    background-image: url("images/moon-dark.png");
 }
+
+
+
+
 
 
 
