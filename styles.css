@@ -48,7 +48,7 @@ h1 {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 20px;
+  /* padding: 5px 20px; */
   /* border: solid salmon; */
 }
 
@@ -72,6 +72,7 @@ p {
   height: 100vh;
 }
 
+/* ikke på plass */
 .sections-gallery {
   height: 100vh;
 }
@@ -83,7 +84,7 @@ p {
 }
 
 img {
-  margin-top: 10px;
+  margin-top: 35px;
   width: fit-content;
   height: 80dvh;
 }
@@ -92,20 +93,25 @@ footer {
   height: 100vh;
 }
 
-.sections-gallery {
+.galleries-cont {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
-.galleries {
+.galleries-row {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   border: solid black;
+  padding: 20px 90px;
 }
 
-.galleries img {
-  height: 200px;
+.galleries-img {
+  max-height: 200px;
+  max-width: 200px;
+  margin: 20px;
   border: solid black;
+  flex: 1;
 }
