@@ -109,6 +109,7 @@ for (let moonNum = 0; moonNum <= 13; moonNum++) {
 
     const content = document.getElementById(`moon-${moonNum}`)
 
+    const moonTitle = document.createElement("h3")
     const moonName = document.createElement("h1")
     const moonMeanDistanceFromNeptune = document.createElement( "h2")
     const moonOrbitalPeriodAroundNeptune = document.createElement( "h2")
@@ -121,6 +122,8 @@ for (let moonNum = 0; moonNum <= 13; moonNum++) {
     moonOrbitalPeriodAroundNeptune.classList.add("moon-text")
     moonMeanDiameter.classList.add("moon-text")
     moonYearDiscovered.classList.add("moon-text")
+    moonTitle.classList.add("moon-title")
+
 
     moonName.id = `moon-n-${moonName}`
     moonMeanDistanceFromNeptune.id = `moon-n-${moonName}`
@@ -128,11 +131,16 @@ for (let moonNum = 0; moonNum <= 13; moonNum++) {
     moonMeanDiameter.id = `moon-n-${moonName}`
     moonYearDiscovered.id = `moon-n-${moonName}`
 
+
+
+    content.appendChild(moonTitle)
     content.appendChild(moonName)
     content.appendChild(moonMeanDistanceFromNeptune)
     content.appendChild(moonOrbitalPeriodAroundNeptune)
     content.appendChild(moonMeanDiameter)
     content.appendChild(moonYearDiscovered)
+
+    moonTitle.innerText = moonObject.moons[moonNum].name
 
     content.addEventListener("mouseover", () => {
         moonName.textContent = moonObject.moons[moonNum].name
@@ -140,10 +148,12 @@ for (let moonNum = 0; moonNum <= 13; moonNum++) {
         moonOrbitalPeriodAroundNeptune.textContent = moonObject.moons[moonNum].orbitalPeriodAroundNeptune
         moonMeanDiameter.textContent = moonObject.moons[moonNum].meanDiameter
         moonYearDiscovered.textContent = moonObject.moons[moonNum].yearDiscovered
+        moonTitle.innerText = ""
         console.log(`Mouse over moon ${moonNum}`)
     })
 
     content.addEventListener("mouseout", () => {
+        moonTitle.innerText = moonObject.moons[moonNum].name
         moonName.textContent = ""
         moonMeanDistanceFromNeptune.textContent = ""
         moonOrbitalPeriodAroundNeptune.textContent = ""
@@ -151,4 +161,6 @@ for (let moonNum = 0; moonNum <= 13; moonNum++) {
         moonYearDiscovered.textContent = ""
         console.log(`Mouse exit moon ${moonNum}`)
     })
+
+
 }
