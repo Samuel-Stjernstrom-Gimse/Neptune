@@ -1,9 +1,11 @@
 * {
     margin: 0;
+    overflow: hidden;
 }
 .main-moon {
     background-image: url("images/backround-moon.webp");
     background-size: cover;
+
 }
 .moons-and-planet {
     height: 120vh;
@@ -21,7 +23,7 @@
     background-image: url("images/moon.png");
     background-size: cover;
     position: absolute;
-    transition-duration: 0.2s;
+    transition-duration: 0.5s;
     height: 8%;
     aspect-ratio: 1/1;
 
@@ -34,7 +36,7 @@
     justify-content: center;
     text-align: center;
     text-justify: auto;
-    font-size: 0.0002em;
+    font-size: 5px;
     font-weight: bold;
     color: white;
     font-family: "Arial";
@@ -42,7 +44,8 @@
 }
 
 .moon-text-h1 {
-    color: red;
+    font-size: 8px;
+    color: turquoise;
 }
 
 
@@ -184,11 +187,12 @@
 #moon-12:hover,
 #moon-13:hover,
 #moon-0:hover {
-    transform: scale(600%);
+    transform: scale(400%);
     z-index: 1;
     aspect-ratio: 1/1;
     box-shadow: 0 0 30px white;
     background-image: url("images/moon-dark.png");
+    transition-duration: 0.3s;
 }
 
 
