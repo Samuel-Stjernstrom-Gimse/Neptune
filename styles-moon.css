@@ -1,9 +1,11 @@
 * {
     margin: 0;
+    overflow: hidden;
 }
 .main-moon {
     background-image: url("images/backround-moon.webp");
     background-size: cover;
+
 }
 .moons-and-planet {
     height: 120vh;
@@ -14,32 +16,38 @@
 
 .moon {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
     padding: 10px;
     border-radius: 200px;
-    background-image:  url("images/moon.png");
+    background-image: url("images/moon.png");
     background-size: cover;
     position: absolute;
-    transition-duration: 0.2s;
+    transition-duration: 0.5s;
+    height: 8%;
+    aspect-ratio: 1/1;
 
-}
-
-.moon:hover {
-    transform: scale(300%);
-    transition-duration: 0.4s ;
 }
 
 .moon-text {
+    margin-top: 5%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
     text-align: center;
-    padding: 2%;
+    text-justify: auto;
+    font-size: 5px;
+    font-weight: bold;
+    color: white;
+    font-family: "Arial";
+
 }
 
-#moon-1 {
-    position: absolute;
-    top: 10%;
-    height: 12%;
-    aspect-ratio: 1/1;
+.moon-text-h1 {
+    font-size: 8px;
+    color: turquoise;
 }
+
 
 .planet {
     display: flex;
@@ -50,107 +58,144 @@
     background-size: cover;
 }
 
-.planet:hover {
-    transform: height();
+#neptune:hover {
+    height: 60%;
+    top: 20%;
+    transition-duration: .2s;
+    z-index: 1;
 }
 
 #neptune {
     position: absolute;
     top: 40%;
-    height: 20%;
+    height: 35%;
+    aspect-ratio: 1/1;
+    transition-duration: 0.2s;
+}
+
+#moon-0 {
+    transform: scale(100%);
+    top: 45%;
+    right: 30%;
+    aspect-ratio: 1/1;
+}
+
+
+#moon-1 {
+    transform: scale(100%);
+    top: 20%;
     aspect-ratio: 1/1;
 }
 
 #moon-2 {
+    transform: scale(100%);
     top: 20%;
     right: 30%;
-    height: 14%;
     aspect-ratio: 1/1;
 }
 
 #moon-3 {
+    transform: scale(90%);
     top: 40%;
     right: 20%;
-    height: 12%;
     aspect-ratio: 1/1;
 }
 
 #moon-4 {
+    transform: scale(30%);
     top: 56%;
     right: 26%;
-    height: 7%;
     aspect-ratio: 1/1;
 }
 
 #moon-5 {
-    top: 78%;
+    transform: scale(130%);
+    top: 75%;
     right: 40%;
-    height: 12%;
     aspect-ratio: 1/1;
 }
 
 #moon-6 {
-    top: 85%;
+    transform: scale(50%);
+    top: 70%;
     right: 50%;
-    height: 4%;
     aspect-ratio: 1/1;
 }
 
 #moon-7 {
-    top: 80%;
+    transform: scale(90%);
+    top: 70%;
     right: 70%;
-    height: 12%;
     aspect-ratio: 1/1;
 }
 
 #moon-8 {
+    transform: scale(120%);
     top: 50%;
     right: 66%;
-    height: 12%;
     aspect-ratio: 1/1;
 }
 
 #moon-9 {
+    transform: scale(90%);
     top: 40%;
     right: 80%;
-    height: 9%;
     aspect-ratio: 1/1;
 }
 
 #moon-10 {
-    top: 25%;
+    transform: scale(70%);
+    top: 28%;
     right: 66%;
-    height: 12%;
     aspect-ratio: 1/1;
 }
 
 #moon-11 {
+    transform: scale(75%);
     top: 75%;
     right: 60%;
-    height: 8%;
     aspect-ratio: 1/1;
 }
 
 #moon-12 {
-    top: 9%;
-    right: 60%;
-    height: 10%;
+    transform: scale(90%);
+    top: 26%;
+    right: 55%;
     aspect-ratio: 1/1;
 }
 
 #moon-13 {
-    top: 80%;
+    transform: scale(100%);
+    top: 70%;
     right: 26%;
-    height: 3%;
     aspect-ratio: 1/1;
 }
 
-#moon-14 {
-    top: 45%;
-    right: 60%;
-    height: 5%;
+
+
+#moon-1:hover,
+#moon-2:hover,
+#moon-3:hover,
+#moon-4:hover,
+#moon-5:hover,
+#moon-6:hover,
+#moon-7:hover,
+#moon-8:hover,
+#moon-9:hover,
+#moon-10:hover,
+#moon-11:hover,
+#moon-12:hover,
+#moon-13:hover,
+#moon-0:hover {
+    transform: scale(400%);
+    z-index: 1;
     aspect-ratio: 1/1;
+    box-shadow: 0 0 30px white;
+    background-image: url("images/moon-dark.png");
+    transition-duration: 0.3s;
 }
+
+
 
 
 
