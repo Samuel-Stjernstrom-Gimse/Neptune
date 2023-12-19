@@ -46,7 +46,7 @@ h1 {
 
 .info {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   padding: 20px;
   /* border: solid salmon; */
@@ -58,8 +58,10 @@ p {
 
 .sections {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
 }
 
 .sections-info {
@@ -72,4 +74,38 @@ p {
 
 .sections-gallery {
   height: 100vh;
+}
+
+.neptune-pic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  margin-top: 10px;
+  width: fit-content;
+  height: 80dvh;
+}
+
+footer {
+  height: 100vh;
+}
+
+.sections-gallery {
+  display: flex;
+  justify-content: center;
+}
+
+.galleries {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border: solid black;
+}
+
+.galleries img {
+  height: 200px;
+  border: solid black;
 }
