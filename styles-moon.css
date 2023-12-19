@@ -26,6 +26,7 @@
     transition-duration: 0.5s;
     height: 8%;
     aspect-ratio: 1/1;
+    overflow: visible;
 
 }
 
@@ -193,6 +194,14 @@
     box-shadow: 0 0 30px white;
     background-image: url("images/moon-dark.png");
     transition-duration: 0.3s;
+}
+
+.moon-title {
+    position: absolute;
+    bottom: 120%;
+    font-size: 20px;
+    font-family: Arial;
+    color: turquoise;
 }
 
 
