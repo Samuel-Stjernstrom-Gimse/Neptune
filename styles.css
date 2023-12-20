@@ -15,6 +15,8 @@ html {
 body {
   /* background-color: var(--red); */
   background-image: url(images/backround-moon.webp);
+  opacity: 0;
+  transition: opacity 2.5s ease-in-out;
 }
 
 li {
