@@ -8,6 +8,10 @@
   --red: hsl(9, 100%, 64%, 0.8);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   /* background-color: var(--red); */
   background-image: url(images/backround-moon.webp);
@@ -36,10 +40,10 @@ li {
 }
 
 .nav-btn {
-  list-style-type: none;
   padding: 2px 20px;
   font-family: "Space Grotesk", sans-serif;
   color: snow;
+  text-decoration: none;
 }
 
 h1 {
@@ -88,8 +92,8 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-height: 500px;
-  max-width: 500px;
+  max-height: 300px;
+  max-width: 300px;
 }
 
 .neptune-info {
@@ -97,14 +101,14 @@ p {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  border: solid snow;
+  /* border: solid snow; */
 }
 
 .para-cont {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  border: solid snow;
+  /* border-top: solid snow; */
   line-height: 1.5;
 }
 
@@ -133,10 +137,11 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 20px;
 }
 
+/* fix this */
 img {
-  margin-top: 35px;
   width: fit-content;
   height: 80dvh;
 }
@@ -156,14 +161,14 @@ footer {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  padding: 20px 90px;
+  padding: 10px;
 }
 
 .galleries-img {
   object-fit: cover;
   max-height: 300px;
   max-width: 200px;
-  margin: 20px;
+  margin-top: 60px;
   border: solid snow;
   flex: 1;
 }
@@ -186,5 +191,10 @@ footer {
 }
 
 .links {
+  font-family: "Montserrat", sans-serif;
   margin: 50px;
+  background-color: black;
+  border: none;
+  color: white;
+  font-size: 30px;
 }

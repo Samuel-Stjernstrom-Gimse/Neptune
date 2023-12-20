@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="home">
   <head>
     <meta charset="UTF-8" />
     <title>Neptune</title>
@@ -14,18 +14,23 @@
   <body class="main-index">
     <nav class="header">
       <nav class="nav">
-        <li class="nav-btn" id="btn-home">HOME</li>
+        <!-- <li class="nav-btn" id="btn-home">HOME</li>
         <li class="nav-btn" id="btn-info">INFO</li>
         <li class="nav-btn" id="btn-moon">MOON</li>
         <li class="nav-btn" id="btn-gallery">GALLERY</li>
-        <li class="nav-btn" id="btn-contact">CONTACT</li>
+        <li class="nav-btn" id="btn-contact">CONTACT</li> -->
+        <a class="nav-btn" href="#home">HOME</a>
+        <a class="nav-btn" href="#info-more">INFO</a>
+        <a class="nav-btn" href="#moons">MOON</a>
+        <a class="nav-btn" href="#galleries">GALLERY</a>
+        <a class="nav-btn" href="#contact">CONTACT</a>
       </nav>
     </nav>
     <h1>NEPTUNE</h1>
     <div class="info">
-      <p>DAY LENGTH <br />30 Earth Hour</p>
+      <p>DAY LENGTH <br />16 Earth Hour</p>
       <p>CONSTELLATION <br />Pisces</p>
-      <p>TEMPERATURE <br />-890*</p>
+      <p>TEMPERATURE <br />-214*</p>
     </div>
 
     <div class="neptune-hero">
@@ -34,25 +39,24 @@
 
     <!-- Fiks dette vis eg gjør masse feil -->
     <main class="sections">
-      <section class="sections-info">
+      <section class="sections-info" id="info-more">
         <section class="neptune-info">
           <img class="neptune-img" src="images/Neptune_cutout.png" alt="" />
           <!-- <h2>NEPTUNE</h2> -->
           <div class="para-cont">
-            <div class="line"></div>
             <p class="neptune-para">
               Neptune is a gas giant and is similar in composition to Uranus. It
               is one of the outer planets in our solar system, beyond the
               asteroid belt, and it is part of the category of planets known as
               ice giants.
             </p>
-            <div class="line"></div>
+
             <p class="neptune-para">
               This gas giant boasts a brilliant blue hue attributed to the
               presence of methane in its atmosphere. With a unique atmosphere
               primarily composed of hydrogen and helium
             </p>
-            <div class="line"></div>
+
             <p class="neptune-para">
               Neptune is marked by its dynamic weather systems, including the
               intriguing yet elusive Great Dark Spot. Orbiting the Sun at an
@@ -64,9 +68,11 @@
       </section>
 
       <li>
-        <section class="sections-moons">MOONS</section>
+        <section class="sections-moons" id="moons">MOONS</section>
+        <!-- Moons javascript -->
       </li>
-      <li class="galleries-cont">
+
+      <li class="galleries-cont" id="galleries">
         <section class="galleries-row">
           <img class="galleries-img" src="images/moon 1.jpg" alt="" />1
           <img class="galleries-img" src="images/moon 2.jpg" alt="" />2
@@ -82,7 +88,7 @@
       </li>
     </main>
 
-    <footer class="footer-cont">
+    <footer class="footer-cont" id="contact">
       <ul class="list-row">
         <button class="links">Linked</button>
         <button class="links">Instagram</button>
