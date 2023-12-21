@@ -1,11 +1,12 @@
-* {
+.moon-section-parent{
+    height: 120vh;
+    overflow: hidden ;
     margin: 0;
-    overflow: hidden;
+    width: 100vw;
 }
-.main-moon {
-    background-image: url("images/backround-moon.webp");
-    background-size: cover;
 
+.main-moon {
+    position: absolute;
 }
 .moons-and-planet {
     height: 120vh;
@@ -19,19 +20,19 @@
     flex-direction: column;
     justify-content: center;
     padding: 10px;
-    border-radius: 200px;
+    border-radius: 500px;
     background-image: url("images/moon.png");
     background-size: cover;
     position: absolute;
     transition-duration: 0.5s;
-    height: 8%;
+    height: 8%vh;
     aspect-ratio: 1/1;
     overflow: visible;
 
 }
 
 .moon-text {
-    margin-top: 5%;
+    margin-top: 1%;
     padding: 0;
     display: flex;
     justify-content: center;
@@ -49,6 +50,26 @@
     color: turquoise;
 }
 
+#neptune-title-text {
+    font-family: Arial;
+    color: turquoise;
+}
+
+#neptune-info-text {
+    margin-top: 0.5%;
+    padding-right: 20%;
+    padding-left: 20%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    text-justify: auto;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    font-family: "Arial";
+    width: 60%;
+}
+
 
 .planet {
     display: flex;
@@ -60,67 +81,75 @@
 }
 
 #neptune:hover {
-    height: 60%;
+    height: 70%;
     top: 20%;
     transition-duration: .2s;
-    z-index: 1;
+    z-index: 3;
 }
 
 #neptune {
     position: absolute;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    text-align: center;
     top: 40%;
     height: 35%;
     aspect-ratio: 1/1;
     transition-duration: 0.2s;
+    z-index: 2;
 }
 
 #moon-0 {
-    transform: scale(100%);
+    transform: scale(200%);
     top: 45%;
-    right: 30%;
+    right: 35%;
     aspect-ratio: 1/1;
 }
 
 
 #moon-1 {
-    transform: scale(100%);
+    transform: scale(80%);
     top: 20%;
     aspect-ratio: 1/1;
+    border-radius: 50%;
 }
 
 #moon-2 {
-    transform: scale(100%);
+    transform: scale(60%);
     top: 20%;
     right: 30%;
     aspect-ratio: 1/1;
 }
 
 #moon-3 {
-    transform: scale(90%);
+    transform: scale(70%);
     top: 40%;
     right: 20%;
     aspect-ratio: 1/1;
 }
 
 #moon-4 {
-    transform: scale(30%);
+    transform: scale(70%);
     top: 56%;
     right: 26%;
     aspect-ratio: 1/1;
 }
 
 #moon-5 {
-    transform: scale(130%);
+    transform: scale(80%);
     top: 75%;
     right: 40%;
     aspect-ratio: 1/1;
+    z-index: 2;
 }
 
 #moon-6 {
-    transform: scale(50%);
+    transform: scale(70%);
     top: 70%;
     right: 50%;
     aspect-ratio: 1/1;
+    z-index: 2;
 }
 
 #moon-7 {
@@ -131,42 +160,43 @@
 }
 
 #moon-8 {
-    transform: scale(120%);
+    transform: scale(50%);
     top: 50%;
     right: 66%;
     aspect-ratio: 1/1;
 }
 
 #moon-9 {
-    transform: scale(90%);
+    transform: scale(50%);
     top: 40%;
     right: 80%;
     aspect-ratio: 1/1;
 }
 
 #moon-10 {
-    transform: scale(70%);
+    transform: scale(52%);
     top: 28%;
     right: 66%;
     aspect-ratio: 1/1;
 }
 
 #moon-11 {
-    transform: scale(75%);
+    transform: scale(55%);
     top: 75%;
     right: 60%;
     aspect-ratio: 1/1;
 }
 
 #moon-12 {
-    transform: scale(90%);
-    top: 26%;
+    transform: scale(60%);
+    top: 39%;
     right: 55%;
     aspect-ratio: 1/1;
+    z-index: 1;
 }
 
 #moon-13 {
-    transform: scale(100%);
+    transform: scale(50%);
     top: 70%;
     right: 26%;
     aspect-ratio: 1/1;
@@ -188,21 +218,26 @@
 #moon-12:hover,
 #moon-13:hover,
 #moon-0:hover {
-    transform: scale(400%);
-    z-index: 1;
+    transform: scale(350%);
+    border-radius: 50%;
+    z-index: 3;
     aspect-ratio: 1/1;
     box-shadow: 0 0 30px white;
     background-image: url("images/moon-dark.png");
-    transition-duration: 0.3s;
+    transition-duration: 0.4s;
+    margin: 0;
 }
 
 .moon-title {
     position: absolute;
-    bottom: 120%;
+    bottom: 110%;
     font-size: 20px;
     font-family: Arial;
-    color: turquoise;
+    color: snow;
+    transition-duration: 0.6s;
 }
+
+
 
 
 

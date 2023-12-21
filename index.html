@@ -10,46 +10,43 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Space+Grotesk&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="styles-moon.css">
 
     <!-- ease in -->
     <script>
-      window.addEventListener("load", function () {
-        document.body.style.opacity = 1;
-      });
+      window.addEventListener("load",
+              function () {
+                document.body.style.opacity = 1;
+              });
     </script>
+
   </head>
   <audio autoplay src="images/brain-damage-148577.mp3"></audio>
   <body class="main-index">
-    <nav class="header">
+    <header class="header">
       <nav class="nav">
-        <!-- <li class="nav-btn" id="btn-home">HOME</li>
-        <li class="nav-btn" id="btn-info">INFO</li>
-        <li class="nav-btn" id="btn-moon">MOON</li>
-        <li class="nav-btn" id="btn-gallery">GALLERY</li>
-        <li class="nav-btn" id="btn-contact">CONTACT</li> -->
         <a class="nav-btn" href="#home">HOME</a>
         <a class="nav-btn" href="#info-more">INFO</a>
-        <a class="nav-btn" href="#moons">MOON</a>
+        <a class="nav-btn" href="#moon-section">MOONS</a>
         <a class="nav-btn" href="#galleries">GALLERY</a>
         <a class="nav-btn" href="#contact">CONTACT</a>
       </nav>
-    </nav>
+    </header>
     <h1>NEPTUNE</h1>
     <div class="info">
-      <p>DAY LENGTH <br />16 Earth Hour</p>
+      <p>DAY LENGTH <br />16 Earth Hours</p>
       <p>CONSTELLATION <br />Pisces</p>
       <p>TEMPERATURE <br />-214*</p>
     </div>
 
     <div class="neptune-hero">
-      <img src="images/Neptune_cutout.png" alt="" />
+      <img id="neptune-hero-1" src="images/Neptune_cutout.png" alt="neptune blue planet" />
     </div>
 
     <!-- Fiks dette vis eg gjør masse feil -->
     <main class="sections">
       <section class="sections-info" id="info-more">
         <section class="neptune-info">
-          <img class="neptune-img" src="images/Neptune_cutout.png" alt="" />
           <!-- <h2>NEPTUNE</h2> -->
           <div class="para-cont">
             <p class="neptune-para">
@@ -74,38 +71,55 @@
           </div>
         </section>
       </section>
+      <div class="moon-section-parent">
+        <section class="moons-and-planet main-moon" id="moon-section" >
+          <div class="planet" id="neptune"></div>
+          <div class="moon" id="moon-0"></div>
+          <div class="moon" id="moon-1"></div>
+          <div class="moon" id="moon-2"></div>
+          <div class="moon" id="moon-3"></div>
+          <div class="moon" id="moon-4"></div>
+          <div class="moon" id="moon-5"></div>
+          <div class="moon" id="moon-6"></div>
+          <div class="moon" id="moon-7"></div>
+          <div class="moon" id="moon-8"></div>
+          <div class="moon" id="moon-9"></div>
+          <div class="moon" id="moon-10"></div>
+          <div class="moon" id="moon-11"></div>
+          <div class="moon" id="moon-12"></div>
+          <div class="moon" id="moon-13"></div>
 
-      <li>
-        <section class="sections-moons" id="moons">MOONS</section>
-        <!-- Moons javascript -->
-      </li>
+          <script src="index.js"></script>
 
-      <li class="galleries-cont" id="galleries">
-        <section class="galleries-row">
-          <img class="galleries-img" src="images/moon 1.jpg" alt="" />1
-          <img class="galleries-img" src="images/moon 2.jpg" alt="" />2
-          <img class="galleries-img" src="images/moon 3.jpg" alt="" />3
-          <img class="galleries-img" src="images/moon 4.jpg" alt="" />4
         </section>
-        <section class="galleries-row">
-          <img class="galleries-img" src="images/moon 5.jpg" alt="" />5
-          <img class="galleries-img" src="images/moon 6.jpg" alt="" />6
-          <img class="galleries-img" src="images/moon 7.jpg" alt="" />7
-          <img class="galleries-img" src="images/moon 8.jpg" alt="" />8
-        </section>
-      </li>
+      </div>
+
+      <section class="galleries-cont" id="galleries">
+        <div class="galleries-row">
+          <img class="galleries-img" src="images/Neptune-JWST.webp" alt=" infrared pictue of neptune showing the rings" />1
+          <img class="galleries-img" src="images/Neptune-nasa-2.webp" alt=" neptune with red light" />2
+          <img class="galleries-img" src="images/Neptune-nasa.webp" alt="neptune from titan" />3
+          <img class="galleries-img" src="images/Neptune-Clouds.webp" alt="close up photo of clouds on neptune" />4
+        </div>
+        <div class="galleries-row">
+          <img class="galleries-img" src="images/neptune-far-jwst.webp" alt="far away picture of neptune in an ochen of stars" />5
+          <img class="galleries-img" src="images/neptune-nasa-3.webp" alt="neptune" />6
+          <img class="galleries-img" src="images/PIA02219~orig.jpg" alt=" neptune black and white" />7
+          <img class="galleries-img" src="images/nasa-ScBkW9AKgcA-unsplash.jpg" alt="neptune blue" />8
+        </div>
+      </section>
     </main>
 
     <footer class="footer-cont" id="contact">
-      <ul class="list-row">
-        <button class="links">Linked</button>
+      <ul class="list-row" id="list-row-1">
+        <button class="links">LinkedIn</button>
         <button class="links">Instagram</button>
-        <button class="links">Personal</button>
+        <button class="links">Portfolio</button>
       </ul>
-      <ul class="list-row">
-        <button class="links">Linked</button>
+      <ul class="list-row" id="list-row-2">
+        <button class="links">LinkedIn</button>
         <button class="links">Instagram</button>
-        <button class="links">Personal</button>
+        <button class="links">Portfolio</button>
       </ul>
     </footer>
   </body>
