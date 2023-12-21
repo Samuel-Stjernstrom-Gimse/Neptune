@@ -112,6 +112,7 @@ p {
   flex-wrap: wrap;
   /* border-top: solid snow; */
   line-height: 1.5;
+  font-family: "Montserrat", sans-serif;
 }
 
 .neptune-para {
@@ -125,6 +126,12 @@ p {
   font-family: "Montserrat", sans-serif;
   color: snow;
 }
+
+/* .highlight {
+  font-size: 20px;
+  font-weight: bold;
+  display: inline-block;
+} */
 
 .sections-moons {
   height: 100vh;
@@ -197,6 +204,13 @@ footer {
   margin: 50px;
   background-color: black;
   border: none;
-  color: white;
+  color: snow;
   font-size: 30px;
+  cursor: pointer;
+}
+
+.links:hover {
+  font-family: "Montserrat", sans-serif;
+  background-color: snow;
+  color: black;
 }
