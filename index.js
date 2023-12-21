@@ -1,11 +1,11 @@
 const moonData = `{
   "moons": [
     {
-      "name": "Triton",
-      "meanDistanceFromNeptune": " 354,760 km",
-      "orbitalPeriodAroundNeptune": "5.87685 Earth days",
-      "meanDiameter": "2,700 km ",
-      "yearDiscovered": 1846
+      "name": " Triton",
+      "meanDistanceFromNeptune": " Distance from Neptune 354,760 km",
+      "orbitalPeriodAroundNeptune": " Orbit 5.87685 Earth days",
+      "meanDiameter": " Diameter 2,700 km ",
+      "yearDiscovered": " Discovered 1846"
     },
     {
       "name": "Nereid",
@@ -18,84 +18,84 @@ const moonData = `{
       "name": "Naiad",
       "meanDistanceFromNeptune": " Distance from Neptune 48,200 km ",
       "orbitalPeriodAroundNeptune": " Orbit 0.294396 Earth days",
-      "meanDiameter": "58 km ",
+      "meanDiameter": " Diameter 58 km ",
       "yearDiscovered": " Discovered 1989"
     },
     {
       "name": "Thalassa",
       "meanDistanceFromNeptune": " Distance from Neptune 50,000 km ",
       "orbitalPeriodAroundNeptune": " Orbit 0.311485 Earth days",
-      "meanDiameter": "80 km (49.7 miles)",
+      "meanDiameter": " Diameter 80 km",
       "yearDiscovered": " Discovered 1989"
     },
     {
       "name": "Despina",
       "meanDistanceFromNeptune": " Distance from Neptune 52,600 km ",
       "orbitalPeriodAroundNeptune": " Orbit 0.334655 Earth days",
-      "meanDiameter": "148 km ",
+      "meanDiameter": "Diameter 148 km ",
       "yearDiscovered": " Discovered 1989"
     },
     {
       "name": "Galatea",
       "meanDistanceFromNeptune": " Distance from Neptune 62,000 km ",
       "orbitalPeriodAroundNeptune": " Orbit 0.428745 Earth days",
-      "meanDiameter": "158 km ",
+      "meanDiameter": " Diameter 158 km ",
       "yearDiscovered": " Discovered 1989"
     },
     {
       "name": "Larissa",
       "meanDistanceFromNeptune": " Distance from Neptune 73,600 km ",
       "orbitalPeriodAroundNeptune": " Orbit 0.554654 Earth days",
-      "meanDiameter": "193 km ",
+      "meanDiameter": " Diameter 193 km ",
       "yearDiscovered": " Discovered 1989"
     },
     {
       "name": "Proteus",
       "meanDistanceFromNeptune": " Distance from Neptune 117,600 km ",
       "orbitalPeriodAroundNeptune": " Orbit 1.122315 Earth days",
-      "meanDiameter": "418 km ",
+      "meanDiameter": " Diameter 418 km ",
       "yearDiscovered": " Discovered 1989"
     },
     {
       "name": "Halimede",
       "meanDistanceFromNeptune": " Distance from Neptune 15,730,000 km ",
       "orbitalPeriodAroundNeptune": " Orbit 1,879.7 Earth days",
-      "meanDiameter": "30 km ",
+      "meanDiameter": " Diameter 30 km ",
       "yearDiscovered": " Discovered 2002"
     },
     {
       "name": "Sao",
       "meanDistanceFromNeptune": " Distance from Neptune 22,420,000 km ",
       "orbitalPeriodAroundNeptune": " Orbit 2,914.1 Earth days",
-      "meanDiameter": "20 km ",
+      "meanDiameter": " Diameter 20 km ",
       "yearDiscovered": " Discovered 2002"
     },
     {
       "name": "Laomedeia",
       "meanDistanceFromNeptune": " Distance from Neptune 23,570,000 km ",
       "orbitalPeriodAroundNeptune": " Orbit 3,167.9 Earth days",
-      "meanDiameter": "20 km ",
+      "meanDiameter": " Diameter 20 km ",
       "yearDiscovered": " Discovered 2002"
     },
     {
       "name": "Psamathe",
       "meanDistanceFromNeptune": " Distance from Neptune 46,700,000 km",
       "orbitalPeriodAroundNeptune": " Orbit 9,115.9 Earth days",
-      "meanDiameter": "20 km",
+      "meanDiameter": " Diameter 20 km",
       "yearDiscovered": " Discovered 2003"
     },
     {
       "name": "Neso",
       "meanDistanceFromNeptune": " Distance from Neptune 48,390,000 km ",
       "orbitalPeriodAroundNeptune": " Orbit 9,374 Earth days",
-      "meanDiameter": "30 km ",
+      "meanDiameter": " Diameter 30 km ",
       "yearDiscovered": " Discovered 2002"
     },
     {
       "name": "S/2004 N1",
       "meanDistanceFromNeptune": " Distance from Neptune 105,300 km ",
       "orbitalPeriodAroundNeptune": " Orbit 0.95 Earth-days",
-      "meanDiameter": "36 km ",
+      "meanDiameter": " Diameter 36 km ",
       "yearDiscovered": " Discovered 2004"
     }
   ]
@@ -160,6 +160,10 @@ for (let moonNum = 0; moonNum <= 13; moonNum++) {
         moonMeanDiameter.textContent = ""
         moonYearDiscovered.textContent = ""
         console.log(`Mouse exit moon ${moonNum}`)
+    })
+
+    moonTitle.addEventListener("mouseover", (event) =>{
+        event.stopPropagation()
     })
 
 

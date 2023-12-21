@@ -3,7 +3,9 @@
   margin: 0;
   box-sizing: border-box;
 }
-
+::-webkit-scrollbar{
+  display: none;
+}
 :root {
   --red: hsl(9, 100%, 64%, 0.8);
 }
@@ -17,6 +19,7 @@ body {
   background-image: url(images/backround-moon.webp);
   opacity: 0;
   transition: opacity 2.5s ease-in-out;
+  width: 100vw;
 }
 
 li {
@@ -29,6 +32,7 @@ li {
   margin-top: 3vh;
   position: sticky;
   top: 3vh;
+  z-index: 6;
 }
 
 .nav {
@@ -116,15 +120,17 @@ p {
 }
 
 .neptune-para {
+  padding: 40px;
   display: flex;
   justify-content: space-evenly;
   align-items: baseline;
-  border: solid black;
+  border: solid snow;
   max-width: 300px;
   margin: 50px;
   align-self: baseline;
   font-family: "Montserrat", sans-serif;
   color: snow;
+  border-radius: 30px;
 }
 
 /* .highlight {
@@ -151,8 +157,7 @@ p {
 
 /* fix this */
 img {
-  width: fit-content;
-  height: 80dvh;
+  object-fit: fill;
 }
 
 footer {
@@ -163,6 +168,7 @@ footer {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  width: 80vw;
 }
 
 .galleries-row {
@@ -175,11 +181,26 @@ footer {
 
 .galleries-img {
   object-fit: cover;
-  max-height: 300px;
-  max-width: 200px;
+  width: 18vw;
+  max-width: 300px;
+  min-width: 200px;
+  aspect-ratio: 3/4;
   margin-top: 60px;
   border: solid snow;
   flex: 1;
+  transition-duration: 0.3s;
+}
+
+.galleries-img:active {
+  position: absolute;
+  transform: scale(150%);
+  object-fit: contain;
+  background-color: black;
+  height: auto;
+  border: none;
+  padding: 0;
+  margin: 0;
+  transition-duration: 0.2s;
 }
 
 .footer-cont {
@@ -214,3 +235,9 @@ footer {
   background-color: snow;
   color: black;
 }
+#neptune-hero-1 {
+  max-height: 80vh;
+}
+
+
+
